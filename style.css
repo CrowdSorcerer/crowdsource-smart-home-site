@@ -2,6 +2,10 @@ a {
     text-decoration: none!important;
 }
 
+#organization a i {
+    color: black;
+}
+
 .banner-header {
     font-size: 3.2rem;
     z-index: -10;
