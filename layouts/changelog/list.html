@@ -14,6 +14,7 @@
                             <p><small>Posted {{ .PublishDate.Format "January 2, 2006" }}{{ if .Params.contributors -}}{{ range $index, $contributor := .Params.contributors }}{{ end }}{{ end }}</small><p></p>
 						</div>
 					</div>
+					<div><br></div>
 				{{ end -}}
 				{{ $.Scratch.Set "paginator" true }}
 				{{ template "_internal/pagination.html" . }}
