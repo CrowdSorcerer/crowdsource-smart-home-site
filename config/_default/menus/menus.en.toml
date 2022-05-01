@@ -10,18 +10,6 @@
   identifier = "help"
   url = "/docs/help/"
 
-[[guide]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/guide/lorem/"
-
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
-
 [[main]]
   name = "Docs"
   url = "/docs/prologue/introduction/"
@@ -30,6 +18,11 @@
 [[main]]
   name = "Changelog"
   url = "/changelog/"
+  weight = 20
+
+[[main]]
+  name = "Roadmap"
+  url = "/roadmap/"
   weight = 20
 
 [[social]]
