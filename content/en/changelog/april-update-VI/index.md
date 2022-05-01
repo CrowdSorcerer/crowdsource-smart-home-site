@@ -8,4 +8,4 @@ images: []
 ---
 
 - Data Lake: removed YARN
-- Simplify connection between the APIs’ Spark instance with the Spark master on the Data Lake
+    - Simplify connection between the APIs’ Spark instance with the Spark master on the Data Lake

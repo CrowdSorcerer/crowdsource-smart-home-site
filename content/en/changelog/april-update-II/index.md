@@ -8,4 +8,4 @@ images: []
 ---
 
 - [TODO] Reworked the use cases (mainly Dashboard related) in the Architecture specification
-- M2 Architecture presentation slides were updated
+    - M2 Architecture presentation slides were updated

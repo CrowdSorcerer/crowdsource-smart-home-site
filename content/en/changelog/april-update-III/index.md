@@ -8,6 +8,6 @@ images: []
 ---
 
 - Ingest API: +1 week (match with Data Lake)
-- Incoming data structure is still not properly defined (JSON/binary/...)
-- Could use improvements (robustness, for instance)
-- Missing proper testing on remote machine
+    - Incoming data structure is still not properly defined (JSON/binary/...)
+    - Could use improvements (robustness, for instance)
+    - Missing proper testing on remote machine

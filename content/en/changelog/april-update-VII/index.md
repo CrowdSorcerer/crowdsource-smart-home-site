@@ -8,4 +8,4 @@ images: []
 ---
 
 - Export API: postponed start of Epic (from 19/04 to 10/05)
-- For the M3 Prototype presentation, other components of the application took priority, such as the Dashboard and metrics presentation through the Query API. Development would also be awkward due to the lack of example/template data to work with
+    - For the M3 Prototype presentation, other components of the application took priority, such as the Dashboard and metrics presentation through the Query API. Development would also be awkward due to the lack of example/template data to work with

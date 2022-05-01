@@ -8,5 +8,5 @@ images: []
 ---
 
 - Website: Rework
-- Added more documentation, with important info from the Milestone Presentation documents (architecture for example)
-- Visual rework
+    - Added more documentation, with important info from the Milestone Presentation documents (architecture for example)
+    - Visual rework
