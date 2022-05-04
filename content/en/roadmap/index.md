@@ -7,6 +7,8 @@ draft: false
 images: []
 ---
 
+{{< figure src="roadmap.png" alt="Roadmap" class="border-0" >}}
+
 ### M1:Inception
 
 - [x]  Slides
@@ -40,14 +42,19 @@ images: []
 - [x]  Ingest setup
 - [x]  Deploy, properly define endpoints and optimizations
 
+### Data Lake | Database setup
+
+- [x]  Create and configure database
+- [x]  Deploy and test connectivity
+
 ### Data Lake | Export API
 
-- [ ]  Create and configure database
-- [ ]  Deploy and test connectivity
+- [ ]  API setup with data extraction from data lake
+- [ ]  Dump in CKAN compliant formats
 
 ### M3: Prototype
 
-- [ ]  Presentation slides
+- [x]  Presentation slides
 
 ### Dashboard | Dashboard
 
@@ -58,7 +65,12 @@ images: []
 
 - [ ]  Investigate and test possible optimizations
 - [ ]  Configure security
-- [ ]  data filling with AI
+- [ ]  Data filling with AI
+
+### Data Lake | Ingest API optimizations
+
+- [x]  Rate-limit operations on each host
+- [ ]  Set compression method on incoming data
 
 ### Data Lake | Query API
 
