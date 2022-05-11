@@ -28,7 +28,7 @@ The project involves the development of 3 main components: a Data Lake, a Dashbo
     - **Aggregator**: component that obtains data from the available integrations and aggregates them, sending it to the Data Lake
     - **Dashboard card**: interface for interaction with the volunteer, to collect an informed consent to data collection and allow customization of which data to send
 
-## The team
+## Team
 
 We’re a team of four students in our 3rd year of the Informatics Engineer Bachelor’s degree at University of Aveiro.
 
@@ -47,7 +47,17 @@ We’re a team of four students in our 3rd year of the Informatics Engineer Bach
 
 ## Links
 
+### Application
+
+Below are the links to the publicly deployed components.
+
+- [Dashboard](https://smarthouse.av.it.pt)
+- [Ingest API documentation](https://smarthouse.av.it.pt/api/ingest/ui)
+
+### Project
+
 Below are links related to the project's development.
 
 - [Organization's GitHub](https://github.com/CrowdSorcerer)
 - [Jira project](https://martinhotav.atlassian.net/jira/software/projects/CSHD/boards/1/roadmap)
+
