@@ -31,11 +31,11 @@ images: []
 - [ ]  Anonymity setup
 - [ ]  Compression and network
 - [x]  Creation and successful setup/interaction
-- [ ]  Lovelace card
+- [ ]  Dashboard card
 - [x]  Obtain data from the integrations
 - [x]  Aggregation setup
-- [ ]  Aggregator connection
-- [ ]  Generate UUID
+- [x]  Aggregator connection
+- [x]  Generate UUID
 
 ### Data Lake | Ingest API
 
@@ -58,8 +58,8 @@ images: []
 
 ### Dashboard | Dashboard
 
-- [ ]  Frontend setup
-- [ ]  Backend setup
+- [x]  Frontend setup
+- [x]  Backend setup
 
 ### Data Lake | Database optimizations
 
@@ -70,12 +70,13 @@ images: []
 ### Data Lake | Ingest API optimizations
 
 - [x]  Rate-limit operations on each host
-- [ ]  Set compression method on incoming data
+- [x]  Set compression method on incoming data
 
 ### Data Lake | Query API
 
-- [ ]  Query setup
+- [x]  Query setup
 - [x]  Analytics gathering
+- [x]  Develop metrics
 
 ### M4: Final report
 
