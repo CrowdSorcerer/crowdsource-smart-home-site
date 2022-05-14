@@ -1,4 +1,4 @@
-baseurl = "https://melodic-medovik-e64e89.netlify.app/"
+baseurl = "https://smarthouse.av.it.pt/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

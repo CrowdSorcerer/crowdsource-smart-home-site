@@ -12,7 +12,7 @@ description = "An anonymous, Open Source, data gathering platform for smart home
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
+domainTLD = "smarthouse.av.it.pt"
 titleHome = "CrowdSorcerer"
 
 ## Twitter Cards
