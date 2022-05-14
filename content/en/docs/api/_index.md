@@ -6,6 +6,4 @@ date: 2022-05-11T17:36:32+01:00
 lastmod: 2022-05-11T17:36:32+01:00
 draft: false
 images: []
-weight: 600
-toc: true
 ---

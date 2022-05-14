@@ -1,5 +1,5 @@
 baseurl = "https://smarthouse.av.it.pt/"
-canonifyURLs = true
+canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true

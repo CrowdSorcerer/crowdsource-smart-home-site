@@ -1,2 +1,2 @@
 baseurl = "https://smarthouse.av.it.pt/"
-canonifyURLs = true
+canonifyURLs = false
