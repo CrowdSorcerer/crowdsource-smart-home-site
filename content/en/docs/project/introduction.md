@@ -1,30 +1,19 @@
 ---
 title: "Introduction"
-description: "Platform for crowdsourcing smart home data"
-lead: "Platform for crowdsourcing smart home data"
+description: "Crowdsourcing smart home data"
+lead: "Crowdsourcing smart home data"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
+    parent: "project"
 weight: 100
 toc: true
 ---
 
 The main objective of this project is to create a platform to gather through a crowdsourcing mechanism anonymous information from homes. The base of this project is be the Open Source Software (OSS) project [Home Assistant](https://home-assistant.io) and the [Portuguese community of users](http://cpha.pt).
-
-## The team
-
-We’re a team of four students in our 3rd year of the Informatics Engineer Bachelor’s degree at University of Aveiro.
-
-- ***Coordinator:*** Diogo Gomes
-
-- **Team Leader:** Martinho Tavares
-- **Frontend Dev**: Diogo Monteiro
-- **Backend Dev:** Camila Fonseca 
-- **DevOps Engineer:** Rodrigo Lima
 
 ## Components
 
@@ -39,9 +28,36 @@ The project involves the development of 3 main components: a Data Lake, a Dashbo
     - **Aggregator**: component that obtains data from the available integrations and aggregates them, sending it to the Data Lake
     - **Dashboard card**: interface for interaction with the volunteer, to collect an informed consent to data collection and allow customization of which data to send
 
+## Team
+
+We’re a team of four students in our 3rd year of the Informatics Engineer Bachelor’s degree at University of Aveiro.
+
+- ***Coordinator:*** Diogo Gomes
+    - [University page](https://www.ua.pt/pt/p/10331537)
+
+- **Team Leader:** Martinho Tavares
+    - [GitHub](https://github.com/martinhoT)
+- **Frontend Dev**: Diogo Monteiro
+    - [GitHub](https://github.com/diomont)
+    - [LinkedIn](https://pt.linkedin.com/in/diogo-monteiro-290093225?trk=public_profile_browsemap)
+- **Backend Dev:** Camila Fonseca
+    - [GitHub](https://github.com/Inryatt)
+- **DevOps Engineer:** Rodrigo Lima
+    - [GitHub](https://github.com/Pengrey)
+
 ## Links
+
+### Application
+
+Below are the links to the publicly deployed components.
+
+- [Dashboard](https://smarthouse.av.it.pt)
+- [Ingest API documentation](https://smarthouse.av.it.pt/api/ingest/ui)
+
+### Project
 
 Below are links related to the project's development.
 
 - [Organization's GitHub](https://github.com/CrowdSorcerer)
 - [Jira project](https://martinhotav.atlassian.net/jira/software/projects/CSHD/boards/1/roadmap)
+
