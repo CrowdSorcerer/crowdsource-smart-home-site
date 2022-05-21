@@ -66,6 +66,7 @@ Some errors may be encountered, which may be the fault of the client or a proble
 
 - **Malformed UUID (400)**: the supplied UUID in the header field `Home-UUID` is not properly formatted. This is due to the string provided in this field not matching the format of a proper UUID, which features 5 fields of hexadecimal characters
 - **Bad ingest decoding (400)**: the request body provided, which includes the home data, is not encoded, compressed, or in the format required by the application. Make sure that it is a JSON object, is encoded using UTF-8 encoding, and is finally compressed using `zlib`. The strucure of the JSON object itself does not matter for in this error to occur
+- **Bad JSON structure (400)**: the decoded JSON data that was provided is not a JSON object. This error is thrown if the decompression and decoding of the data is successful, but the provided JSON primitive at the root level is not a JSON object `{...}` (for example, if it's an array `[...]` or a string `"..."`)
 
 ## Possible issues
 
