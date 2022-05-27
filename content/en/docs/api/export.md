@@ -30,7 +30,7 @@ All endpoints are relative to `/api/export`.
 
 | Endpoint | Method | Header parameters | Path parameters | Query parameters | Request body |
 | --- | --- | --- | --- | --- | --- |
-| /{format} | GET | - | `format` | `date_from`, `date_to` | - |
+| /{format} | GET | - | `format` | `date_from`, `date_to`, `types`, `units` | - |
 
 Parameter definitions:
 
@@ -40,6 +40,8 @@ Parameter definitions:
   - CSV
 - **date_from**: only data from this date forwards will be extracted (UTC+0, in ISO 8601 format), inclusive
 - **date_to**: only data from this date backwards will be extracted (UTC+0, in ISO 8601 format), inclusive
+- **types**: only data from these types of producer will be extracted (e.g. sensor). An array of types can be provided
+- **units**: only data which is represented in the specified units of measurement will be extracted (e.g. GHz). An array of units can be provided
 
 ## Operations
 
@@ -54,4 +56,5 @@ At this moment, the datasets don't have any metadata.
 Some errors may be encountered, which may be the fault of the client or a problem with the server. Below are the custom errors for this API:
 
 - **Bad date format (400)**: the supplied date parameter (either `date_from` or `date_to`) has an incorrect format, which should be ISO 8601 (`yyyy-mm-dd`). The considered timezone is UTC+0, so there may be cases where this consideration may make a difference, but it shouldn't be the cause of this error.
-- **Unsupported exportation format (400)**: The supplied exportation format is not supported. The supplied format string should be the same as the supported formats listed above, without case sensitivity. The API usually provides feedback on the unsupported string that was presented on the request and the strings that are actually accepted.
+- **Unsupported exportation format (400)**: the supplied exportation format is not supported. The format string should be the same as the supported formats listed above, without case sensitivity. The API usually provides feedback on the unsupported string that was presented on the request and the strings that are actually accepted.
+- **Empty dataset (204)**: the provided query filters produce a dataset without data columns or rows. The filtering process produced a dataset without any data about the homes. This can happen if a query filter restricts the data with constraints that no rows comply with, such as a `units` filter specifying a single unit of measurement that doesn't exist in the data lake.

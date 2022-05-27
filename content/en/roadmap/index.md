@@ -51,7 +51,6 @@ images: []
 
 - [x]  API setup with data extraction from data lake
 - [x]  Dump in CKAN compliant formats
-- [ ]  Anonymity setup
 
 ### M3: Prototype
 
