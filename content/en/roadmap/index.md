@@ -63,7 +63,6 @@ images: []
 
 ### Data Lake | Database optimizations
 
-- [ ]  Investigate and test possible optimizations
 - [ ]  Configure security
 - [ ]  Data filling with AI
 
@@ -94,5 +93,10 @@ images: []
 
 ### Website
 
-- [ ]  Summary information of the Architecture document/slides
+- [X]  Summary information of the Architecture document/slides
 - [x]  Information on progress, approaches, changelog
+- [ ]  Aggregator documentation
+- [ ]  Dashboard documentation
+- [X]  Export API documentation
+- [X]  Ingest API documentation
+- [X]  Port Website to docker on frontend
