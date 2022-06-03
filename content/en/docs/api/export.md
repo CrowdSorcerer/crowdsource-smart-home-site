@@ -14,8 +14,8 @@ toc: true
 ---
 
 From this API anyone can extract the collected data into a CKAN compliant dataset in the following supported formats:
+- JSON (recommended)
 - XML
-- JSON
 - CSV
 
 The data returned is compressed in zip format.
@@ -35,8 +35,8 @@ All endpoints are relative to `/api/export`.
 Parameter definitions:
 
 - **format**: the case insensitive string representing the dataset's output format, which can be one of the following supported formats:
+  - JSON (recommended)
   - XML
-  - JSON
   - CSV
 - **date_from**: only data from this date forwards will be extracted (UTC+0, in ISO 8601 format), inclusive
 - **date_to**: only data from this date backwards will be extracted (UTC+0, in ISO 8601 format), inclusive
