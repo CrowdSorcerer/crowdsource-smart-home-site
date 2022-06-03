@@ -1,11 +1,11 @@
 ---
 title: "April Update VI"
 description: ""
-date: 2022-04-23T16:07:45+01:00
-lastmod: 2022-04-23T16:07:45+01:00
+date: 2022-04-29T16:08:31+01:00
+lastmod: 2022-04-29T16:08:31+01:00
 draft: false
 images: []
 ---
 
-- Data Lake: removed YARN
-    - Simplify connection between the APIs’ Spark instance with the Spark master on the Data Lake
+- Export API: postponed start of Epic (from 19/04 to 10/05)
+    - For the M3 Prototype presentation, other components of the application took priority, such as the Dashboard and metrics presentation through the Query API. Development would also be awkward due to the lack of example/template data to work with.

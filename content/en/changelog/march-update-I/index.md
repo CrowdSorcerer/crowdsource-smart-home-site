@@ -8,4 +8,4 @@ images: []
 ---
 
 - Investigation of technology stacks to be used on the project.
-- Draft of architecture
+- Draft of architecture.

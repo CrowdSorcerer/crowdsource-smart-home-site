@@ -7,4 +7,4 @@ draft: false
 images: []
 ---
 
-- Decided that Ingest API will take +1 week of development
+- Decided that Ingest API will take +1 week of development, due to problems that occurred.

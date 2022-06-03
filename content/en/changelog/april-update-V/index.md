@@ -1,12 +1,11 @@
 ---
 title: "April Update V"
 description: ""
-date: 2022-04-22T16:06:55+01:00
-lastmod: 2022-04-22T16:06:55+01:00
+date: 2022-04-23T16:07:45+01:00
+lastmod: 2022-04-23T16:07:45+01:00
 draft: false
 images: []
 ---
 
-- Website: Rework
-    - Added more documentation, with important info from the Milestone Presentation documents (architecture for example)
-    - Visual rework
+- Data Lake: removed YARN
+    - Simplify connection between the APIs’ Spark instance with the Spark master on the Data Lake.
