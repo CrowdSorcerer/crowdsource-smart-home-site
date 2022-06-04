@@ -20,6 +20,8 @@ From this API anyone can extract the collected data into a CKAN compliant datase
 
 The data returned is compressed in zip format.
 
+JSON format is the recommended method because the Home Assistant data has a JSON-like structure, which is already properly embedded in the final JSON resource.
+
 **Default link**: [https://smarthouse.av.it.pt/api/export](https://smarthouse.av.it.pt/api/export)
 
 *Note: this documentation is also present as a Swagger documentation page on* [https://smarthouse.av.it.pt/api/export/ui](https://smarthouse.av.it.pt/api/export/ui)
@@ -30,11 +32,11 @@ All endpoints are relative to `/api/export`.
 
 | Endpoint | Method | Header parameters | Path parameters | Query parameters | Request body |
 | --- | --- | --- | --- | --- | --- |
-| /{format} | GET | - | `format` | `date_from`, `date_to`, `types`, `units` | - |
+| /dataset | GET | - | - | `format`, `date_from`, `date_to`, `types`, `units` | - |
 
 Parameter definitions:
 
-- **format**: the case insensitive string representing the dataset's output format, which can be one of the following supported formats:
+- **format** (*required*): the case insensitive strings representing the dataset's output formats, which can be one of the following supported formats:
   - JSON (recommended)
   - XML
   - CSV
@@ -47,9 +49,59 @@ Parameter definitions:
 
 ### Data extraction
 
-Extract the data into CKAN compliant formats. The data is provided in a zip archive, which when extracted provides the data in the specified file format.
+Extract the data into CKAN compliant formats. The data is provided in a zip archive, which when extracted provides the following files:
 
-At this moment, the datasets don't have any metadata.
+- `crowdsorcerer_extract_{date}.{format}`: file containing the data extracted. `date` is the date when the file was requested, and `format` is the format of the output file requested. If many formats were specified, then there will be multiple data files with the different formats
+- `crowdsorcerer_extract_{date}_metadata.json`: file containing the metadata, which can be supplied in a request to a CKAN server
+
+The metadata is laid out as the description of a CKAN dataset. Below is the example metadata of a dataset extracted with two output formats.
+
+```json
+{
+    "name": "crowdsorcerer-extract",
+    "title": "CrowdSorcerer extract",
+    "author": "CrowdSorcerer",
+    "license_id": "cc-zero",
+    "notes": "Crowdsourced smart home data collected from the CrowdSorcerer open source project. More info on https://smarthouse.av.it.pt",
+    "resources": [
+        {
+            "package_id": "crowdsorcerer-extract",
+            "url": "upload-json",
+            "format": "json"
+        },
+        {
+            "package_id": "crowdsorcerer-extract",
+            "url": "upload-csv",
+            "format": "csv"
+        }
+    ],
+    "extras": [
+        {
+            "key": "date_from",
+            "value": "2022-04-28"
+        },
+        {
+            "key": "date_to",
+            "value": "2022-06-03"
+        },
+        {
+            "key": "types",
+            "value": "['sensor']"
+        },
+        {
+            "key": "units",
+            "value": "any"
+        }
+    ]
+}
+```
+
+The license is [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
+
+The `extras` key contains the list of effective filters applied on the extraction of this dataset. The filters, if not specified, become:
+- `date_from`: the date of the first insertion to the data lake
+- `date_to`: the most recent date allowed to be extracted from the data lake (yesterday)
+- `types` and `units`: "any"
 
 ## Errors
 
