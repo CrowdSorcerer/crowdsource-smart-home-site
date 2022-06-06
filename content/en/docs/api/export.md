@@ -33,6 +33,7 @@ All endpoints are relative to `/api/export`.
 | Endpoint | Method | Header parameters | Path parameters | Query parameters | Request body |
 | --- | --- | --- | --- | --- | --- |
 | /dataset | GET | - | - | `format`, `date_from`, `date_to`, `types`, `units` | - |
+| /formats | GET | - | - | - | - |
 
 Parameter definitions:
 
@@ -49,7 +50,9 @@ Parameter definitions:
 
 ### Data extraction
 
-Extract the data into CKAN compliant formats. The data is provided in a zip archive, which when extracted provides the following files:
+Extract the data into CKAN compliant formats. The available formats can be programatically obtained in a comma-separated string by calling the `/formats` endpoint.
+
+The data is provided in a zip archive, which when extracted provides the following files:
 
 - `crowdsorcerer_extract_{date}.{format}`: file containing the data extracted. `date` is the date when the file was requested, and `format` is the format of the output file requested. If many formats were specified, then there will be multiple data files with the different formats
 - `crowdsorcerer_extract_{date}_metadata.json`: file containing the metadata, which can be supplied in a request to a CKAN server
