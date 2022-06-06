@@ -32,7 +32,7 @@ All endpoints are relative to `/api/export`.
 
 | Endpoint | Method | Header parameters | Path parameters | Query parameters | Request body |
 | --- | --- | --- | --- | --- | --- |
-| /dataset | GET | - | - | `format`, `date_from`, `date_to`, `types`, `units` | - |
+| /dataset | GET | - | - | `formats`, `date_from`, `date_to`, `types`, `units` | - |
 | /formats | GET | - | - | - | - |
 
 Parameter definitions:
