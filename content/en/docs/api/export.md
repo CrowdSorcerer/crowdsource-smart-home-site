@@ -37,7 +37,7 @@ All endpoints are relative to `/api/export`.
 
 Parameter definitions:
 
-- **format** (*required*): the case insensitive strings representing the dataset's output formats, which can be one of the following supported formats:
+- **formats** (*required*): the case insensitive strings representing the dataset's output formats, which can be one of the following supported formats:
   - JSON (recommended)
   - XML
   - CSV
