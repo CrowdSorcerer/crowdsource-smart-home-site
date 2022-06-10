@@ -1,5 +1,5 @@
 ---
-title: "Crowdsourcerer Dashboard Card"
+title: "Crowdsourcerer Lovelace Card"
 description: "A custom card for Home Assistant for use with the Crowdsourcerer integration."
 lead: "A custom card for Home Assistant for use with the Crowdsourcerer integration."
 date: 2022-06-07T14:30:00+01:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "installation"
-weight: 103
+weight: 104
 toc: true
 ---
 
