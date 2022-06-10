@@ -99,7 +99,7 @@ The metadata is laid out as the description of a CKAN dataset. Below is the exam
 }
 ```
 
-The license is [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
+The license is [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 
 The `extras` key contains the list of effective filters applied on the extraction of this dataset. The filters, if not specified, become:
 - `date_from`: the date of the first insertion to the data lake
