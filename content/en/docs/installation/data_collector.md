@@ -35,7 +35,7 @@ First, you need to have HACS installed in your Home Assistant environment. More 
   
   ![image](https://user-images.githubusercontent.com/56603542/172460056-d57a7a24-b1b5-4146-bfc8-7f1ba0313f0a.png)
   
-  4. Insert the link for this repository in 'Repository' text box, and pick the 'Integration' category. Press Add.
+  4. Insert the [link](https://github.com/CrowdSorcerer/data_collector) for this repository in 'Repository' text box, and pick the 'Integration' category. Press Add.
   
   5. Press the big blue button "Explore & download repositories", and then search for data_collector or Crowdsourcerer. Select Crowdsourcerer, and then press "Download this repository with hacs"
   

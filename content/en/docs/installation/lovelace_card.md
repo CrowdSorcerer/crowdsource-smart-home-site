@@ -21,7 +21,9 @@ This assumes that you have HACS installed and configured on your HA installation
 
 ### Step 1
 
-[Add this repository as a Custom Repository in HACS](https://hacs.xyz/docs/faq/custom_repositories), in the Lovelace/Frontend category
+[Add the following link as a Custom Repository in HACS](https://hacs.xyz/docs/faq/custom_repositories), in the Lovelace/Frontend category:
+
+https://github.com/CrowdSorcerer/crowdsourcerer-card
 
 ### Step 2
 
