@@ -28,10 +28,10 @@ images: []
 
 ### Home Assistant | Aggregator
 
-- [ ]  Anonymity setup
-- [ ]  Compression and network
+- [x]  Anonymity setup
+- [x]  Compression and network
 - [x]  Creation and successful setup/interaction
-- [ ]  Dashboard card
+- [x]  Dashboard card
 - [x]  Obtain data from the integrations
 - [x]  Aggregation setup
 - [x]  Aggregator connection
@@ -63,8 +63,8 @@ images: []
 
 ### Data Lake | Database optimizations
 
-- [ ]  Configure security
-- [ ]  Data filling with AI
+- [x]  Configure security
+- [ ]  ~~Data filling with AI~~
 
 ### Data Lake | Ingest API optimizations
 
@@ -96,7 +96,7 @@ images: []
 - [X]  Summary information of the Architecture document/slides
 - [x]  Information on progress, approaches, changelog
 - [ ]  Aggregator documentation
-- [ ]  Dashboard documentation
+- [x]  Dashboard documentation
 - [X]  Export API documentation
 - [X]  Ingest API documentation
 - [X]  Port Website to docker on frontend
