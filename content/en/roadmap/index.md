@@ -79,13 +79,13 @@ images: []
 
 ### M4: Final report
 
-- [ ]  Do report
+- [X]  Do report
 
 ### students@deti (demo, poster, video)
 
-- [ ]  Demo
-- [ ]  Poster
-- [ ]  Video
+- [X]  Demo
+- [X]  Poster
+- [X]  Video
 
 ### Setup
 
@@ -95,7 +95,7 @@ images: []
 
 - [X]  Summary information of the Architecture document/slides
 - [x]  Information on progress, approaches, changelog
-- [ ]  Aggregator documentation
+- [X]  Aggregator documentation
 - [x]  Dashboard documentation
 - [X]  Export API documentation
 - [X]  Ingest API documentation
