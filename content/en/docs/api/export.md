@@ -13,6 +13,8 @@ weight: 600
 toc: true
 ---
 
+**Note: due to non-anonymized data currently present in the data lake, the Export API is down.**
+
 From this API anyone can extract the collected data into a CKAN compliant dataset in the following supported formats:
 - JSON (recommended)
 - XML
